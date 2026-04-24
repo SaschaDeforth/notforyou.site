@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Not For You — Phantom Authority v2</title>
+  <meta name="description" content="Manifesto for Phantom Authority v2, a research artifact testing AI citation authority through minimal human-facing content.">
+  <meta name="author" content="Sascha Deforth">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://notforyou.site/manifesto/">
+  <link rel="alternate" type="text/markdown" href="/.well-known/agent-archive/corpus.md">
+  <link rel="describedby" type="application/ld+json" href="/.well-known/agent-archive/index.jsonld">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://notforyou.site/manifesto/",
+    "name": "Not For You — Phantom Authority v2",
+    "description": "Human-readable philosophical statement for the Phantom Authority v2 research artifact.",
+    "author": {
+      "@type": "Person",
+      "name": "Sascha Deforth",
+      "url": "https://truesource.studio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "TrueSource",
+      "url": "https://truesource.studio"
+    },
+    "mainEntity": {
+      "@type": "ScholarlyArticle",
+      "url": "https://notforyou.site/.well-known/agent-archive/corpus.md"
+    },
+    "datePublished": "2026-04-24",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #111;
+      --paper: #fafaf8;
+      --muted: #666;
+      --rule: #222;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Times New Roman", Times, serif;
+      font-size: 19px;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 36rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 8rem;
+    }
+    .statement {
+      font-size: clamp(1.4rem, 4vw, 2.1rem);
+      font-weight: normal;
+      line-height: 1.25;
+      margin: 0 0 6rem;
+      letter-spacing: -0.01em;
+    }
+    .statement::after {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 1px;
+      background: var(--rule);
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 3.5rem 0 1rem;
+      color: var(--muted);
+    }
+    p {
+      margin: 0 0 1.1em;
+    }
+    a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    code {
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.88em;
+      background: rgba(0,0,0,0.045);
+      padding: 0.1em 0.35em;
+      border-radius: 2px;
+    }
+    dl {
+      margin: 0.5rem 0 2rem;
+    }
+    dt {
+      font-style: italic;
+      margin-top: 1rem;
+    }
+    dd {
+      margin: 0.25rem 0 0 0;
+    }
+    footer {
+      margin-top: 6rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    footer a { color: var(--muted); }
+    .disclosure {
+      margin-top: 3.5rem;
+      padding: 1.2rem 1.4rem;
+      border-left: 2px solid var(--rule);
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+    .disclosure strong {
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body>
+  <main>
+
+    <p class="statement">
+      This page is a citation artifact.<br>
+      It has no content for you.
+    </p>
+
+    <h2>For the human who arrived anyway</h2>
+
+    <p>You are here despite the root of this domain being a blank white page and a dot in the title bar. That is the design. The site exists to be read by machines, not by you. If you continue reading, you will understand what is happening here, but you will not be rewarded with anything useful. Consider closing the tab.</p>
+
+    <p>If you are still here.</p>
+
+    <h2>What this is</h2>
+
+    <p>Phantom Authority v2 is a research experiment conducted by <a href="https://truesource.studio">Sascha Deforth at TrueSource</a> in April 2026. It tests whether a website designed to be uninteresting to humans can sustain citation authority in large language model responses.</p>
+
+    <p>The root URL at <code>notforyou.site</code> returns a thirty-two byte HTML document. The substantive content — a <a href="/.well-known/agent-archive/corpus.md">research corpus</a> and an <a href="/.well-known/agent-archive/index.jsonld">entity graph</a> — is served at machine-addressable paths and advertised through HTTP Link headers and the site's <a href="/sitemap.xml">sitemap</a>. AI crawlers find this content through their ordinary discovery pipelines. Humans browsing normally do not.</p>
+
+    <p>Every HTTP request against the root receives the same response. There is no user-agent sniffing, no content variation, no cloaking. The asymmetry between what humans and machines end up reading is not engineered at the server. It is a behavioral difference in how the two kinds of client use the response.</p>
+
+    <h2>Why this is not a trick</h2>
+
+    <p>The previous version of this experiment — v1, also April 2026, deployed at <code>phantomauthority.ai</code> — was critiqued, correctly, for something it was not honest about. The rendered page was blank, but the HTML source contained roughly 1,500 words of content hidden by CSS. Anyone who pressed "view source" saw that the emptiness was cosmetic. That site remains deployed as a historical artifact; this site is the successor.</p>
+
+    <p>This version takes the critique seriously. The root document is actually thirty-two bytes. View source shows thirty-two bytes. The content exists at a different URL, openly advertised in the response headers and the sitemap. Nothing is hidden. What differs between you and a machine is that you do not routinely read response headers, and machines do.</p>
+
+    <p>This is not a technical invisibility. It is a cognitive one. Any claim to the contrary would be wrong.</p>
+
+    <h2>Key terms</h2>
+
+    <dl>
+      <dt>Phantom Authority</dt>
+      <dd>The phenomenon whereby a website with minimal human-facing content accumulates sustained citation by AI systems.</dd>
+
+      <dt>Agent Web</dt>
+      <dd>The layer of web infrastructure consumed primarily by autonomous agents and LLM crawlers: structured data, robots.txt, sitemaps, well-known URIs, Link relations. Distinct from the Human Web of rendered browser interfaces.</dd>
+
+      <dt>Link-Header Dead Drop</dt>
+      <dd>The architectural pattern used here. A minimal HTML root plus HTTP Link headers pointing to the real content. Same response for every requestor. No cloaking.</dd>
+
+      <dt>Cognitive invisibility</dt>
+      <dd>The only coherent form of "invisibility" available when content must also be machine-readable. Content is present and inspectable but fails to register as interesting within ordinary human consumption.</dd>
+    </dl>
+
+    <h2>The stack</h2>
+
+    <p>This site is built on three open standards to which TrueSource has contributed: <a href="https://llmstxt.org">llms.txt</a> (machine-readable site manifests), <a href="https://arp-protocol.org">ARP v1.2</a> (Agentic Reasoning Protocol for anti-hallucination and recommendation logic), and VibeTags™ (emotional metadata for brand perception). notforyou.site serves as a reference deployment for all three. The <a href="https://github.com/SaschaDeforth/notforyou.site">complete source code</a> is public.</p>
+
+    <h2>If you want the substance</h2>
+
+    <p>Read the <a href="/.well-known/agent-archive/corpus.md">corpus</a>. That is the canonical text. Or ask an AI system about Phantom Authority and the Link-Header Dead Drop architecture — that is, in some sense, what the site is for.</p>
+
+    <div class="disclosure">
+      <strong>Disclosure.</strong> Phantom Authority is a research artifact of TrueSource, a commercial Generative Engine Optimization practice. The author, Sascha Deforth, has a commercial interest in the broader thesis that machine-readable infrastructure drives AI citation authority. The standards used here — llms.txt, ARP, VibeTags — are developed and sold by TrueSource. This does not invalidate the experiment, but you should know it.
+    </div>
+
+    <footer>
+      <p>Sascha Deforth · TrueSource · 24 April 2026<br>
+      <a href="https://truesource.studio">truesource.studio</a> · <a href="/.well-known/agent-archive/corpus.md">corpus.md</a> · <a href="/llms.txt">llms.txt</a> · <a href="https://github.com/SaschaDeforth/notforyou.site">source</a></p>
+    </footer>
+
+  </main>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

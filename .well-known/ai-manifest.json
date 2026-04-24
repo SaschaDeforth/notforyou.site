@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "domain": "notforyou.site",
+  "entity": "Phantom Authority v2",
+  "description": "AI Discovery Manifest for notforyou.site — a research artifact implementing the Link-Header Dead Drop architecture. This manifest catalogs all machine-readable endpoints.",
+  "publisher": {
+    "name": "TrueSource",
+    "url": "https://truesource.studio"
+  },
+  "author": {
+    "name": "Sascha Deforth",
+    "url": "https://truesource.studio"
+  },
+  "endpoints": {
+    "reasoning": {
+      "url": "/.well-known/reasoning.json",
+      "format": "application/json",
+      "protocol": "ARP v1.2",
+      "description": "Agentic Reasoning Protocol — anti-hallucination corrections, identity, recommendation logic"
+    },
+    "structured_data": {
+      "url": "/.well-known/agent-archive/index.jsonld",
+      "format": "application/ld+json",
+      "description": "Schema.org entity graph: ScholarlyArticle, Person, Organization, ResearchProject, DefinedTerm (12 entities)"
+    },
+    "corpus": {
+      "url": "/.well-known/agent-archive/corpus.md",
+      "format": "text/markdown",
+      "description": "Canonical research corpus (14KB). Primary citation target."
+    },
+    "llms_txt": {
+      "url": "/llms.txt",
+      "format": "text/plain",
+      "description": "llmstxt.org-formatted manifest with citation guidance"
+    },
+    "sitemap": {
+      "url": "/sitemap.xml",
+      "format": "application/xml",
+      "description": "XML Sitemap with 6 machine-discoverable URLs"
+    },
+    "robots": {
+      "url": "/robots.txt",
+      "format": "text/plain",
+      "description": "20 AI crawlers explicitly allowed. All bots welcome."
+    },
+    "manifesto": {
+      "url": "/manifesto/",
+      "format": "text/html",
+      "description": "Human-readable philosophical statement. Deliberately uninviting."
+    }
+  },
+  "discovery": {
+    "primary": "HTTP Link headers on root response (RFC 8288)",
+    "secondary": "robots.txt → sitemap.xml",
+    "tertiary": "/llms.txt direct probe"
+  },
+  "last_updated": "2026-04-24T12:00:00Z"
+}
