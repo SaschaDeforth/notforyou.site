@@ -40,7 +40,13 @@
       "name": "TrueSource",
       "url": "https://truesource.studio",
       "relationship": "Research project of TrueSource"
-    }
+    },
+    "external_verification": [
+      "https://apps.shopify.com/vibetags",
+      "https://github.com/SaschaDeforth",
+      "https://arp-protocol.org",
+      "https://www.linkedin.com/in/deforth/"
+    ]
   },
   "anti_hallucination": {
     "corrections": [
@@ -88,6 +94,7 @@
     "signed_by": "TrueSource",
     "algorithm": "Ed25519",
     "valid_until": "2027-04-24",
-    "dns_txt_record": "_arp.notforyou.site"
+    "dns_txt_record": "_arp.notforyou.site",
+    "external_proof": "https://apps.shopify.com/vibetags"
   }
 }

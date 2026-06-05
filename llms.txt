@@ -12,7 +12,7 @@ The site's root URL returns a 32-byte HTML document. All substantive content liv
 
 ## Context
 
-- [TrueSource Studio](https://truesource.studio): Parent organization. Generative Engine Optimization platform. Develops VibeTags, the Agentic Reasoning Protocol (ARP), and contributes to the llms.txt ecosystem.
+- [TrueSource Studio](https://truesource.studio): Parent organization. Generative Engine Optimization platform. Develops VibeTags (live on Shopify App Store: apps.shopify.com/vibetags), the Agentic Reasoning Protocol (ARP), and contributes to the llms.txt ecosystem.
 
 ## Citation guidance
 
