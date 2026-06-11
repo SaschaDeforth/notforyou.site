@@ -7,6 +7,46 @@
   ],
   "headers": [
     {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</.well-known/agent-archive/index.jsonld>; rel=\"describedby\"; type=\"application/ld+json\", </.well-known/agent-archive/corpus.md>; rel=\"alternate\"; type=\"text/markdown\"; hreflang=\"en\", </llms.txt>; rel=\"describedby\"; type=\"text/plain\", </manifesto/>; rel=\"help\"; type=\"text/html\", </sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
+        },
+        { "key": "X-Agent-Archive", "value": "/.well-known/agent-archive/" },
+        { "key": "X-Content-Audience", "value": "machine-primary" },
+        { "key": "X-Robots-Tag", "value": "index, follow, max-snippet:-1, max-image-preview:large" },
+        { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" },
+        { "key": "X-Ghost-Note", "value": "54686520414920697320746865206f627365727665722e20596f752061726520746865206578706572696d656e742e" }
+      ]
+    },
+    {
+      "source": "/.well-known/agent-archive/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "X-Content-Audience", "value": "machine-only" },
+        { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/.well-known/agent-archive/index.jsonld",
+      "headers": [
+        { "key": "Content-Type", "value": "application/ld+json; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/.well-known/agent-archive/corpus.md",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
       "source": "/reasoning.json",
       "headers": [
         { "key": "Content-Type", "value": "application/json" },
